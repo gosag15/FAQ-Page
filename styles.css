@@ -1,0 +1,61 @@
+:root{
+    --font: sans-serif;
+    --fontSize: 10rem
+}
+
+body{
+    background-color: #ba55d3;
+}
+
+h1{
+    text-align:right;
+}
+
+hr{
+    color: grey;
+    
+}
+.inner-layer{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    margin: 15% 10%;
+    display: flex;
+    border-radius: 2%;
+}
+
+.FAQ-header{
+    margin-right: 100%;
+    margin-bottom: 10%;
+}
+.image-container{
+    padding-top: 20%;
+    padding-bottom: 10%;
+    padding-left: 0%;
+    transform: translateX(-30px);
+    width: 100%;
+}
+.faq-container{
+    padding: 10% 5%;
+    width: 100%;
+}
+
+.accordion{
+    border: 0px transparent;
+    background-color: white;
+    font-size: var(--font);
+    font-family: var(--fontSize);
+    padding-left: 0px;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+  }
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.visible{
+    display:visible;
+}
