@@ -23,6 +23,11 @@ hr{
     display: flex;
     border-radius: 2%;
 }
+@media (max-width: 768px){
+    .inner-layer{
+        flex-direction: column;
+    }
+}
 
 .FAQ-header{
     margin-right: 100%;
@@ -33,7 +38,10 @@ hr{
     padding-bottom: 10%;
     padding-left: 0%;
     transform: translateX(-30px);
-    width: 100%;
+    flex: 1;
+}
+.orange-box{
+    transform: translate(-40%, -130%)
 }
 .faq-container{
     padding: 10% 5%;
@@ -48,14 +56,6 @@ hr{
     padding-left: 0px;
 }
 
-.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-  }
-
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
-
 .visible{
-    display:visible;
+    display:none;
 }
